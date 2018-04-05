@@ -1,7 +1,5 @@
-public class MenuItem {
+public interface MenuItem {
 
-  public int price() {
-    return 0;
-  }
+  public int price();
 
 }

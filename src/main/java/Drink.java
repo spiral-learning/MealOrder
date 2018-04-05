@@ -1,4 +1,4 @@
-public class Drink extends MenuItem {
+public class Drink implements MenuItem {
 
   public static final String DRINK_REGULAR = "regular";
   public static final String DRINK_LARGE = "large";

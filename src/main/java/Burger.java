@@ -1,4 +1,4 @@
-public class Burger extends MenuItem {
+public class Burger implements MenuItem {
 
   public static final String BURGER_CHEESE = "cheeseburger";
   public static final String BURGER_REGULAR = "regular";

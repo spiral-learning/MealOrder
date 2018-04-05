@@ -1,9 +1,8 @@
 public class App {
 
   public static void main(String[] args) {
-    // instantiating an object (create one)
-    MealOrder mealOrder = new MealOrder();
-
-    System.out.println("Meal price is: $" + mealOrder.price());
+    MealOrder mealOrder = new MealOrder(Burger.BURGER_REGULAR,
+                                        Drink.DRINK_LARGE);
+    System.out.println("Meal price is: " + mealOrder.price());
   }
 }
