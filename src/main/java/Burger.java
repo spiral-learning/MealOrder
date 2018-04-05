@@ -1,4 +1,4 @@
-public class Burger implements MenuItem {
+public class Burger extends Quantifiable implements MenuItem {
 
   public static final String BURGER_CHEESE = "cheeseburger";
   public static final String BURGER_REGULAR = "regular";
@@ -9,8 +9,13 @@ public class Burger implements MenuItem {
     burgerType = newBurgerType;
   }
 
+  public Burger(String newBurgerType, int newQuantity) {
+    burgerType = newBurgerType;
+    quantity = newQuantity;
+  }
+
   @Override
-  public int price() {
+  public int basePrice() {
     if (burgerType.equals(BURGER_REGULAR)) {
       return 5;
     } else if (burgerType.equals(BURGER_CHEESE)) {

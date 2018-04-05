@@ -1,4 +1,4 @@
-public class Drink implements MenuItem {
+public class Drink extends Quantifiable implements MenuItem {
 
   public static final String DRINK_REGULAR = "regular";
   public static final String DRINK_LARGE = "large";
@@ -13,13 +13,14 @@ public class Drink implements MenuItem {
   }
 
   @Override
-  public int price() {
+  public int basePrice() {
+    int price = 0;
     if (drinkSize.equals(DRINK_REGULAR)) {
-      return 1;
+      price = 1;
     } else if (drinkSize.equals(DRINK_LARGE)) {
-      return 2;
+      price = 2;
     }
-    return 0;
+    return price;
   }
 
   @Override
