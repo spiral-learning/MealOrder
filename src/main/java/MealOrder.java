@@ -20,9 +20,9 @@ public class MealOrder {
     addBurger(burgerType);
   }
 
-  public MealOrder(String burgerType, String theDrinkSize) {
+  public MealOrder(String burgerType, String drinkSize) {
     addBurger(burgerType);
-    addDrink(theDrinkSize);
+    addDrink(drinkSize);
   }
 
   public int price() {
