@@ -18,4 +18,15 @@ public class Burger extends MenuItem {
     }
     return 0;
   }
+
+  public String description() {
+    return "Burger: " + burgerType;
+  }
+
+  @Override
+  public String toString() {
+    return "Burger{" +
+        "burgerType='" + burgerType + '\'' +
+        '}';
+  }
 }

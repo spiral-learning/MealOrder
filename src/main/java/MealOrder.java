@@ -16,6 +16,10 @@ public class MealOrder {
     items.add(new Drink(drinkType));
   }
 
+  public MealOrder(BurgerOption burger) {
+    addBurger(burger.name().toLowerCase());
+  }
+
   public MealOrder(String burgerType) {
     addBurger(burgerType);
   }
@@ -23,6 +27,12 @@ public class MealOrder {
   public MealOrder(String burgerType, String drinkSize) {
     addBurger(burgerType);
     addDrink(drinkSize);
+  }
+
+  public MealOrder(BurgerOption burger,
+                   DrinkOption drink) {
+    addBurger(burger.name().toLowerCase());
+    addDrink(drink.name().toLowerCase());
   }
 
   public int price() {
@@ -34,4 +44,10 @@ public class MealOrder {
     return price;
   }
 
+  @Override
+  public String toString() {
+    return "MealOrder{" +
+        "items=" + items +
+        '}';
+  }
 }

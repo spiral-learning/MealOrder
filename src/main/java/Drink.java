@@ -22,4 +22,8 @@ public class Drink extends MenuItem {
     return 0;
   }
 
+  @Override
+  public String toString() {
+    return "Drink Size: " + drinkSize;
+  }
 }
