@@ -24,6 +24,11 @@ public class Drink extends Quantifiable implements MenuItem {
   }
 
   @Override
+  public void display() {
+    System.out.println(toString());
+  }
+
+  @Override
   public String toString() {
     return "Drink Size: " + drinkSize;
   }

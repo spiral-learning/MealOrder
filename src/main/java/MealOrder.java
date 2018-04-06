@@ -44,6 +44,13 @@ public class MealOrder {
     return price;
   }
 
+  public void display() {
+    for (MenuItem item: items) {
+       item.display();
+    }
+    System.out.println(price());
+  }
+
   @Override
   public String toString() {
     return "MealOrder{" +

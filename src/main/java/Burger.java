@@ -24,8 +24,8 @@ public class Burger extends Quantifiable implements MenuItem {
     return 0;
   }
 
-  public String description() {
-    return "Burger: " + burgerType;
+  public void display() {
+    System.out.println("Burger: " + burgerType);
   }
 
   @Override

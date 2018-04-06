@@ -1,5 +1,5 @@
-public interface MenuItem {
+public interface MenuItem extends Displayable {
 
-  public int price();
+  int price();
 
 }
