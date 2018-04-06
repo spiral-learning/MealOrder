@@ -7,7 +7,8 @@ public class BurgerTest {
   @Test
   public void regularBurgerCosts5() throws Exception {
     Burger burger = new Burger(Burger.BURGER_REGULAR);
-    assertEquals(5, burger.price());
+    int price = burger.price();
+    assertEquals(5, price);
   }
 
   @Test
@@ -19,7 +20,8 @@ public class BurgerTest {
   @Test
   public void threeBurgersCost15() throws Exception {
     Burger burger = new Burger(Burger.BURGER_REGULAR, 3);
-    assertEquals(15, burger.price());
+    int price = burger.price();
+    assertEquals(15, price);
   }
 
   @Test

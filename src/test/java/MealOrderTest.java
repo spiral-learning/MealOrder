@@ -7,7 +7,8 @@ public class MealOrderTest {
   @Test
   public void mealWithRegularBurgerRegularDrinkCosts6() throws Exception {
     MealOrder mealOrder = new MealOrder(BurgerOption.REGULAR, DrinkOption.REGULAR);
-    assertEquals(6, mealOrder.price());
+    int price = mealOrder.price();
+    assertEquals(6, price);
   }
 
 
